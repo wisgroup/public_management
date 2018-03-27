@@ -1,0 +1,205 @@
+/**
+ * Grid CSS 
+ * 
+ * @author     Herman Adrian Torres
+ * @copyright  2014
+ * @version    v0.4.1 21/08/2014    
+ */
+
+/*GRID GENERAL*/
+#grid_table{
+    border-collapse: collapse;
+    clear: both;
+    color: #060606;
+    font-size: 0.9em;
+    width: 100%;
+    width: 100%;
+}
+#grid_table td{
+    padding: 2px 3px;
+}
+/*GRID HEAD*/
+#grid_table thead {
+    background: #cdcec3; /* Old browsers */
+    background: -moz-linear-gradient(top,  #cdcec3 0%, #f0f0f0 63%, #ffffff 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cdcec3), color-stop(63%,#f0f0f0), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #cdcec3 0%,#f0f0f0 63%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #cdcec3 0%,#f0f0f0 63%,#ffffff 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #cdcec3 0%,#f0f0f0 63%,#ffffff 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #cdcec3 0%,#f0f0f0 63%,#ffffff 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdcec3', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+}
+#grid_table th{
+    height: 40px;
+    text-align: center;
+}
+
+/*GRID FOOT*/
+#grid_table tfoot {
+    background: #CFD0D4; /* Old browsers */
+    background: -moz-linear-gradient(top,  #CFD0D4 0%, #f0f0f0 63%, #ffffff 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cdcec3), color-stop(63%,#f0f0f0), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #CFD0D4 0%,#f0f0f0 63%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #CFD0D4 0%,#f0f0f0 63%,#ffffff 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #CFD0D4 0%,#f0f0f0 63%,#ffffff 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #CFD0D4 0%,#f0f0f0 63%,#ffffff 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#CFD0D4', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+#grid_table tfoot tr, #grid_table tfoot td{
+    border:none;
+}
+#grid_table tfoot td{
+    height: 30px;
+}
+#grid_table tfoot td .foot_col{
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 5px;
+    width: 31%;
+}
+#grid_table tfoot .foot_aling{
+    text-align: right;
+}
+#grid_table tfoot td .foot_col ul{
+    list-style: none;
+    margin: 3px auto 0;
+    padding: 0;
+    text-align: center;
+    width: 1000%;
+}
+#grid_table tfoot td .foot_col ul li{
+    display: inline-block;
+}
+#grid_table tfoot td .foot_col #grid_foot_paginador{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    height: 22px;
+    line-height: 22px;
+    margin: 5px 8px;
+    position: relative;
+}
+#grid_table tfoot td .foot_col #grid_foot_paginador .grid_paginador{
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    height: 16px;
+    line-height: 15px;
+    margin: 2px;
+}
+
+#grid_table tfoot td .foot_col #grid_foot_paginador #grid_paginas_mascara{
+    height: 22px;
+    margin: -3px auto 0;
+    overflow: hidden;
+    width: 70%;
+}
+#grid_table tfoot #paginador_izquierda{
+    float: left;
+}
+#grid_table tfoot #paginador_derecha{
+    position: absolute;
+    right: 5px;
+    top: 3px;
+}
+#grid_table tfoot #grid_foot_paginador span{
+    background: none repeat scroll 0 0 #656565;
+    border-radius: 50px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+    height: 12px;
+    line-height: 12px;
+    margin: 2px;
+    text-align: center;
+    width: 12px;
+}
+
+#grid_table tfoot td .foot_col #grid_foot_paginador, #grid_table tfoot td .foot_col #grid_foot_paginador .grid_paginador{
+    background: #F6F6F8;
+    border: 1px solid #DADADA;
+    
+}
+#grid_table tfoot td .foot_col .grid_paginador ul li{
+    color: #9A9A9A;
+    cursor: pointer;
+    float: left;
+    font-weight: bold;
+    margin: 0 5px;
+}
+#grid_table tfoot td .foot_col .grid_paginador ul li:hover{
+    color:#4A4A4A;
+}
+#grid_table tfoot td .foot_col .grid_paginador ul .pagina_seleccionada{
+    background: #ffda8a; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  #ffda8a 0%, #f2bc50 50%, #e79e01 51%, #aa6e00 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#ffda8a), color-stop(50%,#f2bc50), color-stop(51%,#e79e01), color-stop(100%,#aa6e00)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg,  #ffda8a 0%,#f2bc50 50%,#e79e01 51%,#aa6e00 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg,  #ffda8a 0%,#f2bc50 50%,#e79e01 51%,#aa6e00 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg,  #ffda8a 0%,#f2bc50 50%,#e79e01 51%,#aa6e00 100%); /* IE10+ */
+    background: linear-gradient(135deg,  #ffda8a 0%,#f2bc50 50%,#e79e01 51%,#aa6e00 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffda8a', endColorstr='#aa6e00',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    border:1px solid #FFFFFF;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(124, 179, 234, 0.9);
+    -moz-box-shadow:    0px 0px 3px 0px rgba(124, 179, 234, 0.9);
+    box-shadow:         0px 0px 3px 0px rgba(124, 179, 234, 0.9);
+    color:#FFFFFF;
+    cursor: text;
+    height: 20px;
+    margin: -3px 0 0;
+    width: 15px;
+}
+/*GRID CUERPO*/
+#grid_table .linea_impar, #grid_table .linea_par{
+    height: 20px;
+}
+
+#grid_table .linea_impar{
+    background-color: #E9EBEA;
+}
+#grid_table .linea_impar td{
+    border-left: 2px solid #FFFFFF; 
+}
+#grid_table .linea_par{
+    background-color: #FFFFFF;
+}
+#grid_table .linea_par td{
+    border-left: 2px solid #E9EBEA; 
+}
+
+/*  
+    * INICIO: GRID TIPO DE CAMPOS 
+    * @version    v0.4.1 21/08/2014    
+*/
+#grid_table a{
+    color: inherit;
+    padding: 0 3px;
+    text-decoration: none;
+}
+#grid_table .grid_boton{
+    background: none repeat scroll 0 0 #AAAAAA;
+    border: 1px solid #888888;
+    box-shadow: 2px 2px 1px 0 #666666;
+   -moz-box-shadow: 2px 2px 1px 0 #666666;
+   -webkit-box-shadow: 2px 2px 1px 0 #666666;
+    color: #333333;
+    display: inline-block;
+    height: 18px;
+    line-height: 20px;
+    margin: 0 5px;
+    text-align: center;
+    width: 48px; 
+}
+#grid_table .grid_boton:hover{
+    box-shadow: 1px 1px 1px 0 #666666;
+   -moz-box-shadow: 1px 1px 1px 0 #666666;
+   -webkit-box-shadow: 1px 1px 1px 0 #666666;
+    color: #222222;
+    margin: 0 4px 0 6px; 
+}
+/*  
+    * FIN: GRID TIPO DE CAMPOS 
+    * @version    v0.4.1 21/08/2014    
+*/

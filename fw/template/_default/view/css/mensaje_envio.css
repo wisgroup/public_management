@@ -1,0 +1,11 @@
+#grid_contenedor{
+
+}
+.datetimepicker_seleccion{
+    color: #00f;
+    cursor: pointer;
+}
+.datetimepicker_seleccion:hover{
+    text-decoration: underline;
+}
+

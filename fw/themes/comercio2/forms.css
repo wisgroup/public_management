@@ -1,0 +1,118 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 5/11/2016, 02:10:39 PM
+    Author     : Soldier
+*/
+#area_trabajo > #contenedor_formulario {
+    background: #fff none repeat scroll 0 0;
+}
+#contenedor_formulario .titulo_maestro,
+#contenedor_formulario #form_dinamico_contenedor,
+.wis_bloque .titulo_maestro{
+    border-bottom: 1px solid #ccc;
+    padding: 8px 0;
+}
+.maestro_edit_form {
+    overflow: hidden;
+}
+.maestro_edit_form .form_lista_campos {
+    float: left;
+    margin: 0 2% !important;
+}
+/* formulario*/
+.contenedor_bordes{
+    border: 1px solid #A3A3A3;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+input[type='text'],input[type='file'],input[type='textarea'],input[type='datetime'],
+input[type='number'],input[type='mail'], input[type='password'],input[type='email'],
+input[type='url'],input[type='time'],input[type='date'] .custom-input-file, select.custom-input {
+    border: 1px solid #CDCDCD;
+    -webkit-border-radius:  2px;
+    -moz-border-radius:		2px;
+    -ms-border-radius:		2px;
+	-o-border-radius:		2px;
+	border-radius:			2px;
+	min-width: 170px;
+	padding: 5px;
+	
+}
+
+.custom-input-file div {
+    border: 1px solid #999999;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+/*button[type='submit'], button[type='button']{*/
+button[type='submit'], input[type="submit"],
+button[type='button']{
+    background: #f3f3f3 none repeat scroll 0 0;
+    border: 1px solid #ebebeb;
+    border-radius: 0.3em;
+    color: #4d4949;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    outline: medium none;
+    padding: 10px 19px;
+    transition: all 0.5s ease-out 0s;
+}
+
+button[type='reset']{
+    background: #f3f3f3 none repeat scroll 0 0;
+    border: 1px solid #ebebeb;
+    border-radius: 0.3em;
+    color: #4d4949;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 0px;
+    outline: medium none;
+    padding: 10px 19px;
+    transition: all 0.5s ease-out 0s;
+}
+
+button[type='submit'],button[type='reset'], .accion_boton button[type='button']{
+    
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border: none;
+    min-height: 30px;
+    min-width: 30px;
+    cursor: pointer;
+}
+button:hover, input[type="submit"]:hover {
+    background: #2e2d2d none repeat scroll 0 0;
+    color: #fff;
+}
+.submit > button{
+    background: url("botones/aceptar.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border: none;
+    min-height: 30px;
+    min-width: 30px;
+    cursor: pointer;
+}
+
+button[class='guardar'] {
+    /*background-image: url("botones/aceptar.png")!important;*/
+}
+.accion_boton#accion_guardar,
+.accion_boton#accion_editar,
+.accion_boton#accion_cancelar{
+    float: left;
+    margin: 7px auto;
+    padding: 0;
+    width: 115px;
+}

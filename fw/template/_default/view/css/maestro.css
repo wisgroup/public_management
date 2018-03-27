@@ -1,0 +1,109 @@
+/* formulario Edicion */
+#contenedor_formulario{
+    height: 80%;
+    position: relative;
+    margin: 0px auto;
+    min-height: 80%;
+    min-width: 400px;
+    padding: 0px;
+    width:100%;
+}
+.input_maestro{
+    text-align: left;
+}
+.titulo_maestro{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20pt;
+}
+.input_maestro #descripcion{
+    display:visible;
+}
+
+#contenedor_elemento tr {    
+    overflow: hidden;
+    width: 45%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+#contenedor_elemento tr.tr_textarea {
+    padding-top: 10px !important;
+    width: 100%;
+}
+#contenedor_elemento tr.tr_textarea.tr_label {
+    padding-top: 20px !important;
+}
+#contenedor_elemento tr.tr_textarea.tr_label b {
+    width: 100% !important;
+}
+.img_maestro{
+    border: 1px solid #888;
+    -webkit-box-shadow: 2px 2px 0 0 rgba(150, 150, 150, 0.9);
+	-moz-box-shadow: 2px 2px 0 0 rgba(150, 150, 150, 0.9);
+	-ms-box-shadow: 2px 2px 0 0 rgba(150, 150, 150, 0.9);
+	-o-box-shadow: 2px 2px 0 0 rgba(150, 150, 150, 0.9);
+	box-shadow: 2px 2px 0 0 rgba(150, 150, 150, 0.9);
+    height: 90px;
+    margin: 2px 0;
+    overflow: hidden;
+    width: auto;
+}
+.img_maestro .icon{
+    height:80px;
+    width:95px;
+}
+/*
+.input_maestro input{
+    min-width: 113px;
+    width: 100%;
+}
+*/
+/*--------------------------------------------------------------------------------------*/
+.label_oculto{
+
+    display: none;
+
+}
+
+#form_dinamico_contenedor{
+
+    
+
+}
+
+.maestro_form{
+
+    
+
+}
+
+.maestro_form table{
+
+    float: left;
+
+}
+
+.maestro_form_contenedor{
+
+    background: none repeat scroll 0 0 #fff;
+
+    float: left;
+
+    margin: 0 10px 10px 0;
+
+    max-height: 160px;
+
+    min-height: 100px;
+
+    padding: 10px;
+
+    max-width: 350px;
+
+    min-width: 250px;
+
+}
+.info_campo{
+    color:red;
+    font-size: 7pt;
+    font-weight: none;
+}

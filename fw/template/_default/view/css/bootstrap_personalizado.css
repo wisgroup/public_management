@@ -1,0 +1,48 @@
+tfoot input.search_init {
+    font-weight: normal;
+    height: auto;
+    padding: 2px;
+}
+
+@media (max-width: 990px) {
+#contenido, #bloque_uno {
+    width: 100% !important;
+}
+#bloque_dos {
+    visibility: hidden;
+    width: 0 !important;
+}
+}
+.navbar-default {
+    background: transparent !important;
+}
+#navbar_header {
+   /* height: 85px;*/
+}
+#btn_nav_bar {
+    margin-top: 30px !important;
+}
+
+/*#example th {
+    text-align: center;
+}*/
+
+
+/*#navbar li {
+    cursor: pointer;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+#navbar li a {
+    color: #777;
+    text-decoration: none;
+}
+#navbar li:hover > a {
+    color: #000;
+}
+#navbar li a span {
+    margin-right: 5px;
+}
+.navbar {
+    margin-bottom: 0 !important;
+}*/

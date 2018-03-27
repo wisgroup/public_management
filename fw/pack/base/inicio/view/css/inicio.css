@@ -1,0 +1,250 @@
+#contenido{
+    overflow: hidden;
+}
+
+#bloque_uno {
+    position: static;
+}
+
+#contenido{
+    margin: 0 auto;
+}
+#wis_bienvenido{
+    background: rgba(0,0,0,0.1) none repeat scroll 0 0;
+    height: calc(95vh - 60px);
+    margin: 1%;
+	min-height: 400px;
+    overflow: hidden;
+}
+
+@media (max-width: 600px) {
+    #wis_bienvenido .wis_info_container {
+        display: none !important;
+        width: 0px !important;
+    }
+    #wis_bienvenido #container-login-start {
+        width: 100% !important;
+    }
+    #wis_bienvenido #container-login-start #login-form {
+        width: 99% !important;
+    }
+    #wis_bienvenido #container-login-start #login-form-complemento {
+        display: none !important;
+        width: 0%;
+    }
+}
+
+#wis_bienvenido .wis_info_container{
+    background: #020933;
+    display: block;
+    float: left;
+    height: 100%;
+    width: 45%;
+}
+
+#wis_bienvenido #container-login-start{
+    float: left;
+    height: 100%;
+    width: 55%;
+}
+#wis_bienvenido #container-login-start #login-form{ 
+    width: 48%;
+}
+#wis_bienvenido #container-login-start #login-form-complemento {
+    border:1px solid #000;
+    width: 44%;
+}
+#wis_bienvenido #container-login-start #login-form, #wis_bienvenido #container-login-start #login-form-complemento {
+    float: left;
+    height: 94%;
+    margin: 4% 2%;
+    min-height: 300px;
+    min-width: 300px;
+    overflow: hidden;
+}
+#formulario_login{
+    background-size: 115% auto;
+    background-repeat:no-repeat;
+    height: 100%;
+    padding: 2px;
+}
+
+#login_imagen {
+    background-size: 100% 100%;
+    float: left;
+    height: 80px;
+    padding-top: 20px;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+#imagen_producto{
+    position: absolute;
+    right: 0;
+}
+
+#img_logo {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px 10px 0 0;
+    box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.5);
+    height: 133%;
+    margin: -20px auto;
+    overflow: hidden;
+    width: 80%;
+    z-index: 2;
+}
+
+#img_onda{
+    height: 200px;
+    width: 100%;
+}
+
+#contenedor_login {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.15+0,0.33+100 */
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.33) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0.15) 0%,rgba(0,0,0,0.33) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0.15) 0%,rgba(0,0,0,0.33) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#26000000', endColorstr='#54000000',GradientType=0 ); /* IE6-9 */
+    border-top: 8px solid #0080a5;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 5% 0;
+    width: 90%;
+}
+
+.texto {
+    float: left;
+    font-size: 16px;
+    height: 20px;
+    margin: 2px -20px;
+    text-align: center;
+    width: 49%;
+}
+
+#titulo_login label{
+    height: 45px;
+    text-align: center;
+    width: 50%;
+}
+
+#campos_login {
+    float: left;
+    height: 50px;
+    margin: 5px 0 7px;
+    text-align: center;
+    width: 100%;
+
+}
+
+@media (max-width: 600px) {
+    #campos_login input {
+        margin: 0 10%;
+        width: 80%;
+    }
+}
+#campos_login input {
+    background: rgba(30, 30, 30, 0.1) none repeat scroll 0 0;
+    border: 1px solid #999;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.4) inset;
+    -moz-box-shadow:    1px 1px 2px 0 rgba(0, 0, 0, 0.4)inset;
+    box-shadow:         1px 1px 2px 0 rgba(0, 0, 0, 0.4)inset;
+    color: #DDDDD;
+    float: left;
+    font-family: georgia;
+    font-size: 15px;
+    font-weight: bold;
+    height: 42px;
+    margin: 0 15%;
+    min-width: 150px;
+    width: 70%;
+}
+
+#boton_login {
+    float: left;
+    height: 100%;
+    margin: 0 15%;
+    text-align: center;
+    width: 70%;
+}
+
+#boton_login .button_item{
+    float: left;
+    margin: 0;
+    width: 100%;
+}
+
+#boton_login button{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c5deea+0,8abbd7+31,066dab+100;Web+2.0+Blue+3D+%231 */
+    background: rgb(197,222,234); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(197,222,234,1) 0%, rgba(138,187,215,1) 31%, rgba(6,109,171,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(197,222,234,1) 0%,rgba(138,187,215,1) 31%,rgba(6,109,171,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(197,222,234,1) 0%,rgba(138,187,215,1) 31%,rgba(6,109,171,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c5deea', endColorstr='#066dab',GradientType=0 ); /* IE6-9 */
+    border:1px solid #999999;
+    -webkit-box-shadow: #CCCCCC 0px 1px 0px inset;
+    -moz-box-shadow: #CCCCCC 0px 1px 0px inset; 
+    box-shadow: #CCCCCC 0px 1px 0px inset; 
+    -webkit-border-radius: 5px; 
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #ddd;
+    display: inline-block;
+    font-family: arial,helvetica,sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.9pt;
+    margin: 0 auto;
+    padding: 8px 20%;
+    text-decoration: none;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.8);  
+}
+
+#boton_login button:hover{
+    border:1px solid #e1e9a0;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c5deea+0,8abbd7+31,066dab+100;Web+2.0+Blue+3D+%231 */
+    background: rgb(197,222,234); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(197,222,234,1) 0%, rgba(138,187,215,1) 31%, rgba(6,109,171,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(197,222,234,1) 0%,rgba(138,187,215,1) 31%,rgba(6,109,171,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(197,222,234,1) 0%,rgba(138,187,215,1) 31%,rgba(6,109,171,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c5deea', endColorstr='#066dab',GradientType=0 ); /* IE6-9 */
+}
+
+.gradient-pattern-one {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 320px;
+    height: 320px;
+    border: none;
+    font: normal 100%/normal Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    background: -webkit-linear-gradient(-45deg, rgb(235,235,235) 22px, rgb(240,240,240) 22px, rgb(240,240,240) 24px, rgba(0,0,0,0) 24px, rgba(0,0,0,0) 67px, rgb(240,240,240) 67px, rgb(240,240,240) 69px, rgba(0,0,0,0) 69px), -webkit-linear-gradient(-135deg, rgb(235,235,235) 22px, rgb(240,240,240) 22px, rgb(240,240,240) 24px, rgba(0,0,0,0) 24px, rgba(0,0,0,0) 67px, rgb(240,240,240) 67px, rgb(240,240,240) 69px, rgba(0,0,0,0) 69px), rgb(235,235,235);
+    background: -moz-linear-gradient(135deg, rgb(235,235,235) 22px, rgb(240,240,240) 22px, rgb(240,240,240) 24px, rgba(0,0,0,0) 24px, rgba(0,0,0,0) 67px, rgb(240,240,240) 67px, rgb(240,240,240) 69px, rgba(0,0,0,0) 69px), -moz-linear-gradient(225deg, rgb(235,235,235) 22px, rgb(240,240,240) 22px, rgb(240,240,240) 24px, rgba(0,0,0,0) 24px, rgba(0,0,0,0) 67px, rgb(240,240,240) 67px, rgb(240,240,240) 69px, rgba(0,0,0,0) 69px), rgb(235,235,235);
+    background: linear-gradient(135deg, rgb(235,235,235) 22px, rgb(240,240,240) 22px, rgb(240,240,240) 24px, rgba(0,0,0,0) 24px, rgba(0,0,0,0) 67px, rgb(240,240,240) 67px, rgb(240,240,240) 69px, rgba(0,0,0,0) 69px), linear-gradient(225deg, rgb(235,235,235) 22px, rgb(240,240,240) 22px, rgb(240,240,240) 24px, rgba(0,0,0,0) 24px, rgba(0,0,0,0) 67px, rgb(240,240,240) 67px, rgb(240,240,240) 69px, rgba(0,0,0,0) 69px), rgb(235,235,235);
+    background-position: 0 0, 0 64px;
+    -webkit-background-origin: padding-box;
+    background-origin: padding-box;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    -webkit-background-size: 64px 128px;
+    background-size: 64px 128px;
+}
+.wis-shadow1{
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.6);
+}
+
+.wis-separador-derecho1{
+    border-right: 2px solid rgba(200,200,200,0.6); 
+    border-radius: 4px;
+}
+.wis-separador-derecho2{
+    border-right: 2px solid rgba(180,180,180,0.6); 
+    border-radius: 4px;
+}

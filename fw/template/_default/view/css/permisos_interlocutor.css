@@ -1,0 +1,33 @@
+
+.opciones_rama {
+    margin: 20px 5px;
+    font-weight: bolder;
+}
+.opcion_menu {
+    
+}
+.opcion_menu > .opcion_menu_titulo {
+    background: rgba(240, 240, 240, 0.8) none repeat scroll 0 0;
+    padding: 0 10px;
+    text-align: center;
+}
+.opcion_submenu {
+    background: rgba(25, 100, 160, 0.5) none repeat scroll 0 0;
+    color: #18639e;
+    font-weight: bold;
+    padding: 0 10px;
+    text-align: center;
+}
+.opcion_item{
+    color: #DDD;
+    padding: 5px;
+    text-align: left;
+}
+.admin_opciones.opcion_submenu .opcion_menu {
+    -webkit-border-radius:  0 10px 10px 0;
+    -moz-border-radius:     0 10px 10px 0;
+    border-radius:          0 10px 10px 0;
+    -webkit-box-shadow: 2px 2px 3px 0px #222;
+    -moz-box-shadow:    2px 2px 3px 0px #222;
+    box-shadow:         2px 2px 3px 0px #222;
+}

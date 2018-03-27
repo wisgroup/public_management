@@ -1,0 +1,101 @@
+/* Foto Perfil */
+.clase_perfil{
+    border-color : #000;
+}
+
+/* Flecha Perfil */
+
+.clase_aside_flecha{
+    background-image:url("aside/flecha.png");
+}
+
+/* Encabezado */
+.clase_encabezado{
+    background-image: url('aside/encabezado.png');
+    color: #FDEB43;
+}
+/* Flechas Submenu */
+.flecha_derecha_submenu{
+    background-image: url('submenu/flecha_derecha.png');
+}
+
+.flecha_izquierda_submenu{
+    background-image: url('submenu/flecha_izquierda.png');
+}
+
+/* Titulo */
+
+.clase_titulo{
+    background-image: url('titulo.png');
+    color: #FDEB43;
+}
+
+/* Circulo Submenu */
+#circulo_guia{
+   background: url("submenu/circulo.png");
+}
+
+/* formulario*/
+.contenedor_bordes{
+    border: 1px solid #A3A3A3;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 6px;
+    text-align: center;
+} 
+input[type='text'],input[type='file'],input[type='textarea'],input[type='number'],input[type='mail']{
+    border: 1px solid #A3A3A3;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+button{
+   background: url("botones/chulo.png");
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+   border: none;
+   min-height: 30px;
+   min-width: 30px;
+   cursor: pointer;
+}
+button[type='reset']{
+   background: url("botones/equis.png");
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+   border: none;
+}
+
+/*SEGUNDA PARTE*********************************************************************************/
+/** 
+*  INICIO: MIGA DE PAN 
+*   @version    v0.1 21/08/2014  
+*/
+.clase_miga_btn_numero{
+	background-image: url("miga_pan/boton_dos.png");
+}
+#contenedor_miga .item_miga_inactivo{
+    background-image: url("miga_pan/miga_dos.png") !important;
+}
+#contenedor_miga .item_miga_activo{
+    background-image: url("miga_pan/miga_tres.png") !important;
+    color: #FDEB43;
+}
+#contenedor_miga .item_miga_activo *{
+    color: #FDEB43;
+}
+.item_miga_activo .numero_item {
+    background-image: url("miga_pan/boton_uno.png") !important;	
+}
+/** 
+*  FIN: MIGA DE PAN 
+*/
+
+/*ACCORDION*/
+.accordion_contenedor ul li h3 label{
+    background-image: url("aside/boton_uno.png");
+}
+
+.accordion_contenedor ul li h3:hover > label, .accordion_contenedor ul .item_activo h3 label{
+    background-image: url("aside/hover/boton_uno.png");
+}

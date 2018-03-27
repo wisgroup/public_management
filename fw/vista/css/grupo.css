@@ -1,0 +1,96 @@
+#contenido {
+    position: relative;
+}
+#contenido #lista_confirmacion{
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background: none repeat scroll 0 0 #eaeaea;
+    box-shadow: 0px 3px 15px #888;
+    -moz-box-shadow: 0px 3px 15px #888;
+    -webkit-box-shadow: 0px 3px 15px #888;
+    display: block;
+    float: left;
+    height: 315px;
+    margin: 0 8%;
+    position: absolute;
+    /*width: 50%;*/
+    z-index: 1000;
+    top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#contenido #lista_confirmacion #lista_confirmacion_contenido, #contenido #lista_confirmacion #lista_confirmacion_contenido_error{
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    height: 200px;
+    margin: 15px auto;
+    padding: 5px 0 0;
+    width: 300px;
+    float: left;
+}
+
+#contenido #lista_confirmacion #lista_confirmacion_contenido ul, #contenido #lista_confirmacion #lista_confirmacion_contenido_error ul{
+    border: 1px solid #AAAAAA;
+    height: 150px;
+    margin: 0 15px;
+    overflow-y: scroll;
+    /*padding: 5px 0 0 20px;*/
+    padding: 5px 0 0;
+}
+
+
+#contenido #lista_confirmacion p{
+    color: #444444;
+    font-size: 20px;
+    text-align: center;
+}
+
+.lista_botones button{
+    margin: 0 10px;
+    float: left;
+    width: 80px;
+}
+.lista_botones{
+    margin: 0 auto;
+    width: 200px;
+}
+
+
+.mensaje_datos{
+
+border: 1px solid #AAAAAA;
+
+width: 250px;
+
+height: 250px;
+
+margin: 0 auto;
+
+}
+
+.mensaje_datos p{
+
+font­size: 26px;
+
+padding: 61px;
+
+text-align: center;
+
+}
+
+.cerrar_mensaje_datos {
+
+right: 330px !important;
+
+top: ­13px !important;
+
+}
+
+.cursor_pointer {
+
+cursor: pointer;
+
+}

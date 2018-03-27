@@ -1,0 +1,15 @@
+#contenedor_datos_usuario{
+   background-color: #E9EBEA;
+   box-shadow: 0 0 3px 1px #888888;
+   height: 200px;
+   margin: 0 auto;
+   padding: 15px;
+   text-align: center;
+   width: 300px;
+   width: 250px;
+    
+}
+#contenedor_datos_usuario b{
+    text-transform: uppercase;
+}
+

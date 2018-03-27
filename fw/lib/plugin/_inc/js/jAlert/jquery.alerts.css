@@ -1,0 +1,130 @@
+#popup_container {
+	/*font-family: Arial, sans-serif;
+	font-size: 12px;
+*/	min-width: 300px; /* Dialog will be no smaller than this */
+	max-width: 600px; /* Dialog will wrap after this width */
+	background: #FFF;
+	border: solid 2px #999;
+	color: #777;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#popup_title {
+	font-size: 18px;
+	font-weight: normal;
+	text-align: center;
+	line-height: 1.75em;
+	/*color: #666;*/
+	color: #fff;
+	/*background: #CCC url(images/title.gif) top repeat-x;*/
+	background: #999;
+	/*border: solid 1px #FFF;*/
+	border-bottom: solid 1px #999;
+	cursor: default;
+	padding: 0em;
+	margin: 0em;
+}
+
+#popup_content {
+	background: no-repeat url(images/fondo_alerta.png);
+	padding: 1em 1.75em;
+	margin: 0em;
+	background-position: top right;
+	background-size: 40%;
+}
+
+/*#popup_content.alert{
+	background-image: url(images/info.gif);
+	background-image: url(images/info-icon.png);
+}*/
+
+/*#popup_content.confirm {
+	background-image: url(images/help.gif);
+}
+
+#popup_content.prompt {
+	background-image: url(images/help.gif);
+}
+
+#popup_content.message {
+	background-image: url(images/message-icon.png);
+}
+
+#popup_content.warning {
+	background-image: url(images/warning-icon.png);
+}
+
+#popup_content.error {
+	background-image: url(images/error-icon.png);
+}*/
+
+#popup_content.load {
+	background-image: none!important;
+}
+
+.load #popup_icon{
+	background-image: url("images/load.gif")!important;
+    background-repeat: no-repeat;
+    float: left;
+    height: 50px;
+    width: 50px;
+
+}
+
+#popup_message {
+	/*padding-left: 48px;*/
+	padding-left: 60px;
+}
+
+#popup_panel {
+	text-align: center;
+	margin: 2em 0em 0em 1em;
+}
+
+#popup_prompt {
+	margin: .5em 0em;
+}
+
+#popup_ok, #popup_cancel{
+	border-radius: 2px;
+	/*border: medium none;*/
+	background-color: #999;
+	color: #fff;
+	/*font-weight: bold;*/
+	cursor: pointer;
+	 padding-top: 5px;
+}
+
+#popup_ok:hover, #popup_cancel:hover{
+	color: #ccc;
+	
+}
+
+#popup_icon{
+	background-image: url("images/info-icon.png");
+    background-repeat: no-repeat;
+    float: left;
+    height: 50px;
+    width: 50px;
+
+}
+
+
+#table_alert{
+	border-spacing: 4px 1px !important;
+ 	border-collapse: separate !important;
+
+}
+
+#table_alert thead{
+	font-weight: bold;
+}
+
+#table_alert tr{
+	text-align: center;
+}
+
+
+

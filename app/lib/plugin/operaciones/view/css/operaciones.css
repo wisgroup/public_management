@@ -1,0 +1,653 @@
+#global_container{
+    position:absolute;
+    margin-left: 600px;
+}
+#contenedor_transacciones{
+    width:500px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/*-----------------------------------------------------------------------------------------------------*/
+
+#input_enviar_editar:hover, .admin_button:hover, .add_button:hover{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#116b70+0,1a6172+100 */
+    background: #116b70; /* Old browsers */
+    background: -moz-linear-gradient(left, #116b70 0%, #1a6172 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #116b70 0%,#1a6172 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #116b70 0%,#1a6172 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#116b70', endColorstr='#1a6172',GradientType=1 );
+    border:#00595D solid 1px;
+    color:#FFF;
+}
+.cont_titulo_modulo{
+    margin: 20px 0;
+    text-align: center;
+}
+.datagrid {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #8C8C8C;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;  
+    border-radius: 5px;
+    clear: both;
+    font: 12px/150% Arial,Helvetica,sans-serif;
+    overflow: hidden;
+}
+#tabla_detalle{
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+.datagrid td{
+    border: 1px outset #555;
+    padding: 5px 10px;
+}
+.datagrid tr{
+    border: 1px outset #555;
+}
+.datagrid tr:nth-child(odd){
+    background: #999999;
+    color: #FFFFFF;
+}
+
+.datagrid tr:nth-child(even){
+    background: #FFFFFF;
+    color: #000000;
+}
+.datagrid p{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#tabla_detalle th, tabla_detalle td{
+    border: 1px solid #DDDDDD;
+    padding: 8px 12px;
+}
+.inset{
+
+    font-family:'MyriadPro';
+    font-weight:bold;
+    font-size:20px;
+    line-height:28px;
+    margin-left:13px;
+    color:#404040;
+    text-shadow: rgba(255,255,255,0.5) 0 1px 1px;
+}
+#bill_form {
+    font-size: 11px;
+    height: 100%;
+    margin: 0 auto;
+    width: 770px;
+}
+.bill_cabecera{
+    background: #6f7982; /* Old browsers */
+    background: -moz-linear-gradient(top, #6f7982 0%, #525d65 58%, #28343b 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6f7982), color-stop(58%,#525d65), color-stop(100%,#28343b)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #6f7982 0%,#525d65 58%,#28343b 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #6f7982 0%,#525d65 58%,#28343b 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #6f7982 0%,#525d65 58%,#28343b 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #6f7982 0%,#525d65 58%,#28343b 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6f7982', endColorstr='#28343b',GradientType=0 ); /* IE6-9 */
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    height: 130px;
+    overflow: hidden;
+    width: 100%;
+}
+.bill_cabecera input, .bill_cabecera label{
+    margin: 5px 5px 0 0;
+    float: left;
+
+}
+.bill_cabecera label{
+    line-height: 20px;
+    text-align: right;
+    width: 58px;
+}
+.bill_cabecera .tipo_1 select, .bill_cabecera .tipo_2 #bill_datos_adicionales{
+    display: none;
+}
+.bill_cabecera .tipo_2 select, .bill_cabecera .tipo_1 #bill_datos_adicionales{
+    display: block;
+}
+#bill_form article{
+    background: none repeat scroll 0 0 rgba(100, 100, 100, 0.5);
+    border: 2px solid #888888;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    float:left;
+    font-family: 'MyriadPro';
+    font-weight: normal;
+    height: 362px;
+    position: relative;
+}
+#bill_form #bill_selected {
+    position:relative;
+    float:left;
+    max-width: 370px;
+    margin-left: 10px;
+}
+
+#bill_form #bill_existencia {
+    position:relative;
+    float:left;
+    max-width: 370px;
+    margin-left: 10px;
+}
+
+#bill_lista_productos{
+    display: inline-block;
+    height: 40px;
+    width: 100%;
+}
+#bill_form article .linea{
+    display: inline-block;
+    padding-left: 3px;
+    width: 97%;
+}
+#bill_form article .linea label{
+    color:#DDD;
+}
+#bill_form article td{
+    color:#AB0D0D;
+}
+.cont_campos_variables, .cont_titulo_modulo{
+    width:100%;
+    overflow: hidden;
+    border-bottom: 3px solid #AAAAAA;
+}
+
+#bill_form article #selected_header, #bill_form article #lista_header{
+    padding: 10px 0 10px 10px;
+}
+#bill_form article #selected_header, #bill_form article #lista_header, #bill_form article #selected_footer{
+    border: 1px solid #949494;
+    font-family: 'MyriadPro';
+    font-weight: bold;
+}
+
+#bill_form article #lista_header{
+    text-align: center;
+}
+#bill_selected input, #bill_selected select, #bill_existencias input, #bill_existencias select{
+    width: 105px;
+}
+#bill_selected .fecha{
+    width: 100px;
+}
+#bill_selected .hora{
+    float:right;
+    height:20px;
+    width: 100px;
+}
+#bill_form article .linea div{
+    float: left;
+}
+#bill_form article .linea .codigo{
+    width: 35px;
+}
+#bill_form article .linea .producto{
+    width: 165px;
+}
+
+#bill_form article .linea .cantidad{
+    padding-right: 5px;
+    text-align: right;
+    width: 50px;
+}
+#bill_form article .linea .campo_boton{
+    text-align: center;
+    width: 25px;
+}
+#bill_form article .linea .valor{
+    height: 11px;
+    padding: 0 2px; 
+    text-align: right;
+    width: 50px;
+}
+#bill_form article .add_cant{
+    font-size: 10px;
+    height: 20px;
+    text-align: center;
+    max-width:10px;
+    margin-right: 5px;
+    min-width: 20px !important;
+}
+#bill_form article .add_button{
+    background: #F43B4E;
+    background: -moz-linear-gradient(top, #F43B4E 0%, #AF0512 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F43B4E), color-stop(100%,#AF0512));
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F43B4E', endColorstr='#AF0512',GradientType=0 );
+    border:#AF0512 solid 1px;
+    -moz-border-radius:80px;
+    -ms-border-radius: 80px;
+    border-radius:80px;
+    color: white;
+    cursor: pointer;    
+    float: left;
+    font-weight: bolder;
+    padding: 1px 3px;
+    text-decoration: none;
+}
+.linea td{
+    text-align: center;
+}
+
+#bill_form article #selected_footer{
+    bottom: 0;
+    height: 22px;
+    padding: 5px 0 0 10px;
+    position: absolute;
+}
+#bill_form article #selected_footer, #bill_form article #selected_header{
+    width: 95%;
+}
+#bill_form article#bill_form{
+    font-size: 14px;    
+}
+#bill_label_total{
+    color:#FFF;
+    font-weight: bold;
+}
+#bill_total{
+    font-weight: bold !important;
+    font-size: 14px !important;
+}
+#bill_form article select{
+    float:left;
+    margin: 5px;
+}
+.selected_cost{
+    float: right;
+    font-size: 10px;
+    height: 10px;
+    text-align: right;
+    width: 50px;
+}
+.valor_resaltado{
+    color: #cc0000;
+}
+.bill_cabecera h6{
+    font-weight: bold;
+    margin-left: 100px;
+    color:#FFF;
+}
+.cont_campos span, .cont_checkbox span, .cont_campos_variables span, .cont_titulo_modulo span{
+    font-family:'MyriadPro';
+    font-weight:bold;
+    font-size:14px;
+    line-height:28px;
+    margin-left:13px;
+}
+article.modulo_edicion p, article.modulo_edicion_txt p, article.modulo_pregunta_txt p, #filtros .label{
+    font-family: 'MyriadPro';
+    font-weight:normal;
+    font-size:12px;
+    color:#4D4D4D;
+    padding-top:7px;
+}
+#contenedor_seleccion, #contenedor_productos{
+    background: none repeat scroll 0 0 #DDDDDD;
+    -moz-box-shadow:-2px 0 1px 0px #999999 inset;
+    -webkit-box-shadow:-2px 0 1px 0px #999999 inset;
+    box-shadow: -2px 0 1px 0px #999999 inset;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 5px 0;
+    width: 100%;
+}
+#cabecera_venta{
+    display: none;
+}
+.bill_cabecera textarea{
+    height: 40px;
+    width: 275px;
+}
+
+.admin_button{
+    background: #00595d; /* Old browsers */
+    background: -moz-linear-gradient(left, #00595d 0%, #134c54 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #00595d 0%,#134c54 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #00595d 0%,#134c54 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00595d', endColorstr='#134c54',GradientType=1 );
+    border:#00595d solid 1px;
+    color:#FFF;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    height: 30px;
+    margin-right: 10px;
+    width: 110px;
+}
+#cont_enviar_editar{
+    float: left;
+    height: 50px;
+    margin: 5px 10%;
+    width: 100%;
+}
+#enviar_editar{
+    width:450px;
+    height:30px;
+    margin:10px auto;
+}
+#buscador_id{
+    width: 50px;
+}
+.buscador_button{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00595d+0,134c54+100 */
+    background: #00595d; /* Old browsers */
+    background: -moz-linear-gradient(left, #00595d 0%, #134c54 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #00595d 0%,#134c54 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #00595d 0%,#134c54 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00595d', endColorstr='#134c54',GradientType=1 );
+    border:#00595D solid 1px;
+    color:#FFF;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    height: 23px;
+    line-height: 1px;
+    margin-right: 10px;
+    width: 70px;
+}
+.select_transacciones{
+    margin-left: 10px !important;
+}
+
+
+/*TRX Ventas*/
+.wis_solo_lectura{
+    background: #CCCCCC;
+}
+.wis_numerico_corto, .wis_numerico_largo{
+    text-align: right;
+}
+.wis_numerico_corto{
+    color: blue;
+    font-size: 22px !important;
+    margin: 0 !important;
+    padding: 0 5px !important;
+    text-align: center !important;
+    width: 40px !important; 
+}
+.wis_numerico_largo{
+    color: blue;
+    font-size: 24px;
+    margin: 0 !important;
+    min-width: 80px !important;
+    padding: 0 5px !important;
+    width: 80px !important;
+}
+.factura_numero{
+    font-weight: bold;
+    color: #AB0D0D;
+}
+.accion_boton{
+    float: left;
+    margin: 0 3% 0 0;
+}
+.wis_cancelar{
+    background: red;
+    padding: 2px 10px !important;
+}
+#factura_formato_export{
+
+}
+.formato_tirilla{
+    max-width: 300px;
+}
+.formato_tirilla h3, .formato_tirilla h4, .formato_tirilla h5, .formato_tirilla h6{
+    margin: 0 !important;
+}
+
+@media print {
+
+}
+#wis-trx-product-table div {
+    color: #d21000;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.reporte_resumen_item {
+    background: rgba(100, 100, 100, 0.3) none repeat scroll 0 0;
+    float: left;
+    list-style: outside none none;
+    margin: 5px;
+    min-width: 150px;
+    padding: 5px 10px;
+    width: auto;
+}
+.trx-resumen-block {
+    background: rgba(0, 0, 0, 0.1) none repeat scroll 0 0;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    display: inline-block;
+    float: left;
+    height: 100px;
+    margin: 0 10px 0 0;;
+    width: 31.5%;
+}
+.input_pago{
+    min-width: 100px !important;
+    width: 110px !important;
+    font-size: 20px  !important;
+}
+.wis-trx-aside.wis-block {
+    border-bottom: 1px solid #999;
+    border-right: 1px solid #999;
+    float: left;
+    width: 40%;
+}
+.wis-trx-complement.wis-block {
+    border-bottom: 1px solid #999;
+    border-right: 1px solid #999;
+    float: left;
+    padding: 1%;
+    width: 60%;
+}
+table.wis-block {
+    border-radius: 3px 3px 0 0;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+#wis-trx-product-table th {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f6f6f6+47,ededed+100;White+3D+%231 */
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+}
+#wis-trx-product-table th strong {
+    display: block;
+    padding: 10px;
+}
+#wis-trx-product-table-body td {
+    background: #f8f8f8 none repeat scroll 0 0;
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.2);
+    padding: 5px 10px;
+}
+#wis-trx-product-table {
+
+}
+.trx_resumen_tabla{
+    margin: 0 0 0 5px;
+}
+/*WIS-FORM*/
+.wis-trxform{
+    height: 80%;
+    width: 94%;
+}
+
+.wis-trxform .wis-block, .wis-trxform .wis-trx-linea{
+    display: -webkit-box;
+    display: block;
+    float: left;
+    padding: 0% 0.4%;
+}
+.wis-trxform .wis-trx-linea{
+    height: auto;
+    width: -moz-min-content;
+}
+
+.wis-trxform table, .wis-trxform th, .wis-trxform td {
+    border: 0px solid black;
+    border-collapse: collapse;
+    padding: 2px 0px !important;
+}
+
+.wis_numerico_corto{
+    min-width: 40px !important;
+    width: 90px;
+}
+.wis_boton_busqueda{
+    padding: 5px 15px !important;
+}
+#trx_product_search{
+    margin: 5px 0 0 0 !important;
+}
+.wis-trxform th strong {
+    display: block;
+    font-family: Arial;
+    font-size: 80%;
+    padding: 0 10% !important;
+}
+.wis-trxform td p {
+    margin: 0 1%;
+}
+.wis-trxform .wis-trx-encabezado{
+    height: 100%;
+    margin: 5px 0;
+    max-height: 100px;
+    padding: 0;
+    width: 100%;
+}
+.wis-trxform .wis-trx-encabezado label{
+    width: 65px;
+}
+.wis-trxform #wis-trx-product-table thead{
+    background: rgba(50,100,250,0.20);
+}
+
+.wis-trxform .wis-trx-cuerpo{
+    background: rgba(50, 50, 50, 0.1) none repeat scroll 0 0;
+    -webkit-box-shadow: -152px -32px 70px 50px #cfcfcf inset;
+    -moz-box-shadow: -152px -32px 70px 50px #cfcfcf inset;
+    -ms-box-shadow: -152px -32px 70px 50px #cfcfcf inset;
+    -o-box-shadow: -152px -32px 70px 50px #cfcfcf inset;
+    box-shadow: -152px -32px 70px 50px #cfcfcf inset;
+}
+#wis-trx-product-table-body .item_factura td {
+    background: #fff none repeat scroll 0 0;
+}
+
+#wis-trx-product-table-body .item_factura td, 
+#wis-trx-product-table-body .item_factura th{
+    border: 1px solid #ddd !important;
+    padding: 0 4px !important;
+}
+.total_lvl4 {
+    border-top: 1px dotted #555;
+    font-size: 25px;
+}
+.resumen_linea {
+    min-height: 25px;
+    min-width: 70px;
+    padding: 4px 4px;
+}
+.resumen_linea > b {
+    float: right;
+}
+
+
+/*TRX TABS*/
+/* Style the tab */
+div.tab {
+    border: 1px solid #ccc;
+    float: left;
+    overflow: hidden;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: #f1f1f1;
+    border-top-style: none;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: none;
+    border-color: #999;
+    cursor: pointer;
+    float: left;
+    font-size: 0.8em;
+    outline: none;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    background: rgba(0, 0, 0, 0.05) none repeat scroll 0 0;
+    border: 1px solid #ccc;
+    border-top: none;
+    display: none;
+    overflow: hidden;
+    padding: 6px 5px;
+} 
+.tabcontent ul {
+    padding: 0 !important;
+}
+.tabcontent ul li {
+    background: #fff none repeat scroll 0 0;
+    border-left: 4px solid paleturquoise;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    -weblit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.4);
+    -ms-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.4);
+    -o-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    float: left;
+    height: 50px;
+    list-style: outside none none;
+    margin: 3px 1%;
+    min-height: 50px;
+    overflow: hidden;
+    padding: 4px;
+    width: 31%;
+}
+.tabcontent h3 {
+    margin: 0 0 10px;
+}
+.tabcontent h7 {
+    color: sienna;
+    float: right;
+    font-weight: bolder;
+}
+
+#sub{
+
+    font-style: italic;
+}
