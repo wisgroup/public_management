@@ -49,7 +49,7 @@ define('FW_PREFIJO', "fw_");
 
 /* WIS CONFIG */
 //const BASE_TYPES = array('fw', 'app');
-define('NAV_OPCION_DEFAULT', 17);
+define('NAV_OPCION_DEFAULT', 1);
 
 /*WIS FW TIPOS DE TRX*/
 define('TRX_VENTA', 1);
@@ -61,7 +61,7 @@ define('PDCT_INSUMO', 2);
 define('PDCT_FABRICADO', 3);
 
 /*WIS FW TIPOS DE NEGOCIO*/
-define('TIPO_NEGOCIO_WIS', 4);
+define('TIPO_NEGOCIO_WIS', 1);
 define('TIPO_NEGOCIO_COMERCIO', 1);
 define('TIPO_NEGOCIO_BAR', 2);
 define('TIPO_NEGOCIO_RESTAURANTE', 3);

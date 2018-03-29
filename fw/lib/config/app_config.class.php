@@ -8,11 +8,11 @@ class App_Config {
     private $clave = '';
     /* CLAVE PARA PRODUCCION */
     //private $clave = 'JDJ5JDEwJHp1YVF2Z2Jab1A4OHdXZGhhUUJvMHU1akNTQnVuMEJzNmNJMi9laG9aa2lxNnlFaUxlclUu';
-    private $base_datos = 'wis_fw_moss_4_110_paradigma';
+    private $base_datos = 'wis_fw_siac_v0';
 
     /* GENERAL */
-    private $session = 'wis_fw_moss';
-    private $site_title = "moss";
+    private $session = 'wis_fw_siac';
+    private $site_title = "SIAC";
 
     /* MAILING */
     private $nombre_from = "";

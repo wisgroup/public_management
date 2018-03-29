@@ -107,26 +107,13 @@ class TemplateBase {
                     <script type="text/javascript" src="fw/controlador/js/<?php echo $this->seccion; ?>.js"></script>
                 <?php } ?>
                 <!-- especifico de cada app -->
-                <link rel="stylesheet" href="app/pack/pedido/pedido_recoleccion/view/css/pedido_recoleccion.css" type="text/css" media="screen" />
-                <link rel="stylesheet" href="app/pack/pedido/pedido_recoleccion_pos/view/css/pedido_recoleccion_pos.css" type="text/css" media="screen" />
-                <link rel="stylesheet" href="app/pack/pedido/comandas/view/css/comandas.css" type="text/css" media="screen" />
-                <link rel="stylesheet" href="app/pack/pedido/mesa/view/css/mesa.css" type="text/css" media="screen" />            
-                <link rel="stylesheet" href="app/pack/transaccion/ventas/view/css/ventas.css" type="text/css" media="screen" />   
                 <link rel="stylesheet" href="app/pack/transaccion/operaciones/view/css/operaciones.css" type="text/css" media="screen" />
-                <link rel="stylesheet" href="app/pack/pedido/comandas/view/css/inventarioFisico.css" type="text/css" media="screen" />
-                <link rel="stylesheet" href="app/pack/transaccion/caja_balance/view/css/caja_balance.css" type="text/css" media="screen" /> 
-                <link rel="stylesheet" href="app/pack/transaccion/facturar/view/css/factura.css" type="text/css" media="screen" /> 
                 
                 <?php if (file_exists("app/vista/css/$this->seccion.css")) { ?>
                     <link rel="stylesheet" href="fw/vista/css/<?php echo $this->seccion; ?>.css" type="text/css" media="screen" />  
                 <?php } ?>
                 <script type="text/javascript" src="<?php echo PATH_APP_PLUGINS; ?>operaciones/controller/js/operaciones.js"></script>
-                <script type="text/javascript" src="app/pack/pedido/mesa/controller/js/mesa.js"></script>
-                <script type="text/javascript" src="app/pack/pedido/pedido_recoleccion/controller/js/pedido_recoleccion.js"></script>
-                <script type="text/javascript" src="app/pack/pedido/pedido_recoleccion_pos/controller/js/pedido_recoleccion_pos.js"></script>
-                <script type="text/javascript" src="app/pack/pedido/orden_produccion/controller/js/orden_produccion.js"></script>
-                <script type="text/javascript" src="app/pack/pedido/comandas/controller/js/comandas.js"></script>
-                <script type="text/javascript" src="app/pack/transaccion/ventas/controller/js/ventas.js"></script>
+                
                 <script src='app/controlador/js/lib/pdfmake-master/build/pdfmake.min.js'></script>
                 <script src='app/controlador/js/lib/pdfmake-master/build/vfs_fonts.js'></script>
                 <?php if (file_exists("fw/pack/" . $this->modulo->tipo . "/" . $this->seccion . "/controller/js/" . $this->seccion . ".js")) { ?>

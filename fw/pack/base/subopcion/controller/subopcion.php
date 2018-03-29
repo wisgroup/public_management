@@ -4,8 +4,6 @@ class Subopcion extends Modulo {
 
     public $tipo_contenido = 'html';
 
-    CONST TODOS_PERFILES = 0;
-
     function home() {
         $parametros = $this->gn->traer_parametros('GET');
         $clase = $this->gn->get_data_loged('clase');
@@ -29,18 +27,8 @@ class Subopcion extends Modulo {
 
         if (isset($subopciones) && $subopciones != '') {
             require_once($this->get_view_path());
-            //require_once ("fw/pack/base/subopcion/view/subopcion.html.php");
             SubopcionHTML::home($subopciones, $clase);
-        } else {
-            //if() tengo que distinguir entre transacciones e inventario fisico
-            if ($parametros->id == 2) {
-                header('location:?opcion=' . 'transacciones');
-            } elseif ($parametros->id == 3) {
-                header('location:?opcion=' . 'inventarioFisico');
-            } elseif ($parametros->id == 15) {
-                header('location:?opcion=' . 'mesas_visual' . '&type=ajax');
-            }
-        }
+        } 
     }
 
 }
